@@ -24,7 +24,7 @@
 extern zend_module_entry xdiff_module_entry;
 #define phpext_xdiff_ptr &xdiff_module_entry
 
-#define PHP_XDIFF_VERSION "2.0.1-dev"
+#define PHP_XDIFF_VERSION "2.1.0"
 
 #ifdef PHP_WIN32
 #define PHP_XDIFF_API __declspec(dllexport)
@@ -38,22 +38,6 @@ extern zend_module_entry xdiff_module_entry;
 
 PHP_MINIT_FUNCTION(xdiff);
 PHP_MINFO_FUNCTION(xdiff);
-
-PHP_FUNCTION(xdiff_file_diff);
-PHP_FUNCTION(xdiff_file_bdiff);
-PHP_FUNCTION(xdiff_file_patch);
-PHP_FUNCTION(xdiff_file_bpatch);
-PHP_FUNCTION(xdiff_file_merge3);
-PHP_FUNCTION(xdiff_file_rabdiff);
-PHP_FUNCTION(xdiff_file_bdiff_size);
-
-PHP_FUNCTION(xdiff_string_diff);
-PHP_FUNCTION(xdiff_string_bdiff);
-PHP_FUNCTION(xdiff_string_patch);
-PHP_FUNCTION(xdiff_string_bpatch);
-PHP_FUNCTION(xdiff_string_merge3);
-PHP_FUNCTION(xdiff_string_rabdiff);
-PHP_FUNCTION(xdiff_string_bdiff_size);
 
 #endif	/* PHP_XDIFF_H */
 
